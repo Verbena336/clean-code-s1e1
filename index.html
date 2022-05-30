@@ -15,7 +15,7 @@
         <h3 class="section__title section__title_new-task">Add Item</h3>
         <div class="section__task task task_new">
           <input id="new-task" class="task__input" type="text">
-          <button class="task__btn">Add</button>
+          <button class="task__btn" id="add-btn">Add</button>
         </div>
       </section>
       <section class="section">
@@ -46,7 +46,7 @@
         <ul class="section__list completed-list" id="completed-list">
           <li class="section__item task completed-list__task">
             <input class="task__checkbox" type="checkbox" checked>
-            <label class="task__label">See the Doctor</label>
+            <label class="task__label task__label_line-through">See the Doctor</label>
             <input type="text" class="task__input">
             <button class="task__btn task__edit-btn">Edit</button>
             <button class="task__btn task__delete-btn delete-btn">
