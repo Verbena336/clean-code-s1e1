@@ -29,7 +29,8 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.task__input, .task__label {
+.task__input,
+.task__label {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
@@ -41,10 +42,13 @@
   margin:0;
   padding: 0px;
 }
-.section__item, .section__title {
+.section__item,
+.section__title {
   list-style:none;
 }
-.task__input, .task__btn, .task__checkbox {
+.task__input,
+.task__btn,
+.task__checkbox {
   outline:none;
 }
 .task__btn {
@@ -104,8 +108,10 @@ input#new-task {
   justify-content: space-between;
   align-items: center;
 }
-.section__item .task__checkbox, .section__item .task__label,
-.section__item .task__input, .section__item .task__btn {
+.section__item .task__checkbox,
+.section__item .task__label,
+.section__item .task__input,
+.section__item .task__btn {
   vertical-align: middle;
 }
 
