@@ -126,6 +126,12 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    const elementsList = listItem.children;
+    for (let elem of elementsList) {
+        if (elem.tagName === 'LABEL') {
+            elem.classList.add('task__label_line-through')
+        }
+    }
     completedListHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -138,6 +144,13 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    const elementsList = listItem.children;
+    for (let elem of elementsList) {
+        console.log(elem)
+        if (elem.tagName === 'LABEL') {
+            elem.classList.remove('task__label_line-through')
+        }
+    }
     todoListHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
